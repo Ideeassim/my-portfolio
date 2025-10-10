@@ -93,7 +93,7 @@
                     <div class="s-intro__content-text">
 
                         <!-- <div class="s-intro__content-pretitle text-pretitle">Hello</div> -->
-                        <div>
+                        <div id="intro">
                             <h1  style="color: rgb(80, 76, 76); font-weight: 400;" >Hello,</h1>
                         <h4 style="margin-top: 5px; color: rgb(80, 76, 76); font-weight: 400;" >
                        I'm <span style="text-decoration:underline ;">Idongesit Assim. </span><br>
@@ -558,8 +558,9 @@
                         <div class="column xl-6 md-6 tab-12">
                             <h5>Contact Me</h5>
                             <ul class="link-list">
-                                <li><a href="#0">ibasseymode@gmail.com</a></li>
-                                <li>070 488 977 68</li>
+                                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibasseymode@gmail.com">ibasseymode@gmail.com</a></li>
+                                <li>+23470 488 977 68</li>
+                                <li><a href="www.linkedin.com/in/idongesit-assim">LinkedIn Profile</a></li>
                             </ul> 
                         </div>
                     </div>                    
@@ -615,7 +616,13 @@
 
 <script src="https://unpkg.com/@mui/material@5.15.14/umd/material-ui.development.js"></script>
 
-
+<!-- intro styling -->
+ <script>
+  const intro = document.getElementById("intro");
+  const isMobile = window.innerWidth <= 1024; // covers mobile + tablet widths
+  const color = isMobile ? "white" : "rgb(80, 76, 76)";
+  intro.querySelectorAll("h1, h4").forEach(el => el.style.color = color);
+</script>
 
   <!-- Write React code -->
   <script type="text/babel">
